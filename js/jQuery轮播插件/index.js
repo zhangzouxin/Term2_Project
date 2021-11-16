@@ -33,6 +33,8 @@ $(function(){
 				
 			});
 
+
+			
 			// 电子书table切换
 			var $lis =$('.ebooks .ebooks-nav > li');
 			$lis.mouseover(function() {
