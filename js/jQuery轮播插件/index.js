@@ -17,7 +17,6 @@ $(function(){
 				isShowNum:true //是否显示数字
 			});
 
-
 			// 图书电子书小轮播
 			$('#ebooks-banner').tyslide({
 				boxh:223,//盒子的高度
@@ -33,8 +32,6 @@ $(function(){
 				
 			});
 
-
-			
 			// 电子书table切换
 			var $lis =$('.ebooks .ebooks-nav > li');
 			$lis.mouseover(function() {
@@ -59,8 +56,7 @@ $(function(){
 				$(this).find('.ebooks-title').hide();
 				$(this) .find('.desc').show();
 			})
-
-
+			
 			// 衣服轮播
 			$('#clothes').tyslide({
 				boxh: 340, //轮播的高度
@@ -110,19 +106,6 @@ $(function(){
 				controlsCurrentColor: "#00ff00", //当前控制按钮的颜色
 				isShowNum: true //是否显示数字
 			})
-
-
-			//电子书手风琴效果
-		$('#ebooks-right > li').mouseenter(function() {
-				//对鼠标所在的位置操作
-				$(this).find('.desc').show(); //内容显示
-				$(this).find('#ebook-title').hide(); //标题隐藏
-				//对其他位置的操作
-				$(this).siblings().find('.desc').hide(); //内容隐藏
-				$(this).siblings().find('#ebook-title').show(); //标题显示
-	
-			})
-
 
 			// 推荐用品滑动
 		$('#active>li').mouseenter(function() {
