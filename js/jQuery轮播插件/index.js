@@ -124,7 +124,36 @@ $(function(){
 			$('#active>li').eq(0).css('backgroundColor', '#ccc')
 		}
 	
-		
+		// 二维码
+		$('.qr-code p:eq(1)').hover(function() {
+				$('.qr-code .ticket').stop(true).animate({
+							left: '-100px'
+						},
+						800)
+					// console.log('11');
+			}, function() {
+				$('.qr-code .ticket').stop(true).animate({
+					left: 0
+				}, 800)
+			})
+			// 顶部搜索框交互
+		$(document).scroll(function() {
+			if ($('html,body').scrollTop() > 300) {
+				// console.log('11')
+				$('.top-search').fadeIn();
+			} else {
+				$('.top-search').fadeOut();
+			}
+		})
+	
+		//楼层跳转
+		$('.floor li').click(function() {
+			var index = $(this).index();
+			var topOffset = $('.floor-box').eq(index).offset().top
+			$('html,body').animate({
+				scrollTop: topOffset - 50,
+			})
+		})
 
 	})
 	

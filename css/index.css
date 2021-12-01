@@ -492,8 +492,8 @@ text-align: left;
 .clothes .top .title {
 	text-indent: 24px;
 	font-size: 24px;
-	font-weight: 300;
-	color: #333
+	font-weight: 300px;
+	color: #ff6700;
 }
 
 .clothes .top ul li {
@@ -657,8 +657,8 @@ text-align: left;
 .sport .top .title {
 	text-indent: 24px;
 	font-size: 24px;
-	font-weight: 300;
-	color: #333
+	font-weight: 300px;
+	color: #ff6700;
 }
 
 .sport .top ul li {
@@ -822,8 +822,9 @@ text-align: left;
 	text-indent: 24px;
 	font-size: 24px;
 	font-weight: 300;
-	color: #333
+	color:#ff6700;
 }
+	
 
 .children-clothes .top ul li {
 	float: left;
@@ -986,7 +987,7 @@ text-align: left;
 	text-indent: 24px;
 	font-size: 24px;
 	font-weight: 300;
-	color: #333
+	color:#ff6700;
 }
 
 .daily .content .left {
@@ -1036,7 +1037,7 @@ text-align: left;
 	height: 151px;
 	width: 176px;
 }
-/************************************************ 10.推广商品 ***********************/
+/***************************************** 10.推广商品 ***********************/
 
 .promotion {
 	height: 686px;
@@ -1057,7 +1058,7 @@ text-align: left;
 	text-indent: 24px;
 	font-size: 24px;
 	font-weight: 300;
-	color: #333
+	color:#ff6700;
 }
 /*右侧激活类*/
 
@@ -1232,7 +1233,101 @@ text-align: left;
 	font-size: 20px;
 	color: black;
 }
+/****************************** 二维码 *********************************/
 
+.qr-code {
+	width: 40px;
+	height: 180px;
+	position: fixed;
+	top: 185px;
+	right: 0px;
+}
+
+.qr-code>p {
+	width: 40px;
+	height: 40px;
+	/* background-color: pink; */
+}
+
+.qr-code p>img {
+	width: 100%;
+	height: 100%;
+}
+
+.qr-code>p:nth-child(2) {
+	width: 40px;
+	height: 100px;
+	/* background-color: red; */
+}
+
+.qr-code div {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	z-index: -100;
+}
+/***************************** 顶部搜索框 ****************************/
+
+.top-search {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: rgba(255, 123, 0, 0.8);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+
+.top-search .search-box {
+	width: 400px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #ff6700;
+	margin: 10px auto;
+	background-image: url('../img/搜索.png');
+	background-repeat: no-repeat;
+	background-position: 365px -1px;
+}
+
+.top-search .search-box input {
+	height: 26px;
+	width: 360px;
+	border: 2px solid #ff6700;
+	outline: none;
+	text-indent: 10px;
+}
+/**********************************==========*分类楼层 *============********************/
+
+.floor {
+	width: 40px;
+	height: 200px;
+	background-color: #f2f2f2;
+	position: fixed;
+	margin-left: 50%;
+	left: -640px;
+	top: 200px
+}
+
+.floor li {
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	transition: all 0.3s;
+}
+
+.floor li:hover {
+	width: 80px;
+	color: #fff;
+	background-color: #93d56f;
+}
+
+.floor li img {
+	width: 40px;
+	height: 40px;
+}
 
 /* 返回顶部 */
 .backToTop {
