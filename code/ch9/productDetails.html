@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="../../css/reset.css">
-    <link rel="stylesheet" href="../../css/shopcart.css">
+    <link rel="stylesheet" href="../../css/magnifier.css">
+    <link rel="stylesheet" href="../../css/productDetails.css">
 </head>
 
 <body>
@@ -25,7 +26,6 @@
             </div>
         </div>
     
-
     <!-- 2、导航 -->
 	<div class="nav container">
         <!--搜索框购物车 订单-->
@@ -67,79 +67,72 @@
                     </ul>
                 </div>
             </div>
-    <!-- 购物车 -->
-    <div class="shopcart container">
-        <h3>全部商品&nbsp;&nbsp;(<i class="count"></i>)</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th><input type="checkbox">全选</th>
-                    <th>商品</th>
-                    <th>单价</th>
-                    <th>数量</th>
-                    <th>小计</th>
-                    <th>操作</th>
-                </tr>
-            </thead>
-            <tbody id="id">
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td><img src="../../img/index08_05.jpg" alt=""> 从你的全世界路过</td>
-                    <td class="price">11.25</td>
-                    <td>
-                        <div>
-                            <span class="sub">-</span>
-                            <input type="text" value="1">
-                            <span class="add">+</span>
+    <!-- 大盒子 -->
+    <div class="product">
+        
+        <!-- 产品详情 -->
+        <div class="productDatils container clearfix">
+            <div class="left-box fl">
+                <div class="magnifier" id="magnifier1">
+                    <div class="magnifier-container">
+                        <div class="images-cover"></div>
+                        <!--当前图片显示容器-->
+                        <div class="move-view"></div>
+                        <!--跟随鼠标移动的盒子-->
+                    </div>
+                    <div class="magnifier-assembly">
+                        <div class="magnifier-btn">
+                            <span class="magnifier-btn-left">&lt;</span>
+                            <span class="magnifier-btn-right">&gt;</span>
                         </div>
-                    </td>
-                    <td class="subtotalPrice" style="font-size: 15px;color: #585858;"><b></b></td>
-                    <td style="font-size: 15px;color:#585858;cursor: pointer;" class="del">删除</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td><img src="../../img/index08_05.jpg" alt=""> 从你的全世界路过</td>
-                    <td class="price">52.00</td>
-                    <td>
-                        <div>
-                            <span class="sub">-</span>
-                            <input type="text" value="1">
-                            <span class="add">+</span>
+                        <!--按钮组-->
+                        <div class="magnifier-line">
+                            <ul class="clearfix animation03">
+                                <li>
+                                    <div class="small-img">
+                                        <img src="../../素材图片/书籍/22616096-1_l.jpg" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small-img">
+                                        <img src="../../素材图片/书籍/21090357-1_l.jpg" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small-img">
+                                        <img src="../../素材图片/书籍/22472496-1_l_2.jpg" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small-img">
+                                        <img src="../../素材图片/书籍/22499729-1_l_5.jpg" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small-img">
+                                        <img src="../../素材图片/书籍/22788959-1_l.jpg" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small-img">
+                                        <img src="../../素材图片/书籍/22616096-1_l.jpg" />
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                    </td>
-                    <td class="subtotalPrice" style="font-size: 15px;color: #585858;"><b></b></td>
-                    <td style="font-size: 15px;color:#585858;cursor: pointer;" class="del">删除</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td><img src="../../img/index08_05.jpg" alt=""> 从你的全世界路过</td>
-                    <td class="price">13.14</td>
-                    <td>
-                        <div>
-                            <span class="sub">-</span>
-                            <input type="text" value="1">
-                            <span class="add">+</span>
-                        </div>
-                    </td>
-                    <td class="subtotalPrice" style="font-size: 15px;color: #585858;"><b></b></td>
-                    <td style="font-size: 15px;color:#585858;cursor: pointer;" class="del">删除</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="total">
-            <div class="fl">
-                <input type="checkbox">全选
-                <span class="deleteCheck">删除选中商品</span>
-            </div>
-            <div class="fr">
-                <span>已选择 <i class="totalCount" style="font-style: normal;color: #ff6700;font-size: 20px;font-weight: bold;">0</i> 件商品</span>
-                <span>总价 <i class="totalprice" style="font-style: normal;color: #ff6700;">0.00</i></span>
-                <button>去结算</button>
+                        <!--缩略图-->
+                    </div>
+                    <!--经过放大的图片显示容器-->
+                    <div class="magnifier-view"></div>
+                </div>
             </div>
 
+            <div class="right-box fr">
+                
+            </div>
         </div>
     </div>
-    <!-- 11.尾部 -->
+    <!-- 尾部 -->
     <div class="footer container">
         <!-- 顶部 -->
         <div class="top">
@@ -209,8 +202,11 @@
     </div>
     <!-- 引入jquery文件-->
     <script src="../../js/jQuery轮播插件/js/jquery-1.11.0.js"></script>
+    <!-- 轮播插件-->
+    <script src="../../js/放大镜插件/js/magnifier.js"></script>
     <!-- 自己的js-->
-    <script src="../../js/jQuery轮播插件/js/shopcart.js"></script>
+    <script src="../../js/jQuery轮播插件/js/productDetails.js"></script>
+  
 </body>
 
 </html>

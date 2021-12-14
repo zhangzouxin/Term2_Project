@@ -1,0 +1,38 @@
+.product {
+    height: 595px;
+    background-color: #f2f2f2;
+    /* margin-top: -7px; */
+}
+
+.product h2 {
+    height: 56px;
+    line-height: 56px;
+    font-size: 30px;
+    color: #858585;
+    position: relative;
+    margin-left: 50%;
+    left: -600px;
+}
+
+.product .productDatils {
+    height: 500px;
+    margin-top: auto;
+    background-color: #fcfcfc;
+}
+
+.product .productDatils .left-box {
+    width: 340px;
+    height: 470px;
+}
+
+.product .productDatils .right-box {
+    width: 820px;
+    height: 500px;
+    background-color: pink;
+}
+
+
+
+.magnifier-container {
+    height: 381px !important;
+}
