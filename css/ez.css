@@ -70,23 +70,23 @@
     background-color: green;
 }
 /* 上下滑动 */
-/* .out-box{
+.out-box{
     overflow: hidden;
 }
 .inner-box{
     height: 1500px;
     position: relative;
     top: 0;
-} */
+}
 
-.out-box{
+/* .out-box{
     overflow: hidden;
 }
 .inner-box{
     width: 4800px;
     position: relative;
     left: 0;
-}
+} */
 .guess-content li{
     width: 1200px;
     height: 500px;

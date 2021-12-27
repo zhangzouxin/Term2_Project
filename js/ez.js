@@ -32,26 +32,26 @@ $(function () {
 
     // 换一批
     //上下滑动
-    // var index = 0;
-    // $('.change').click(function() {
-    //     index++;
-
-    //     index = index > 2 ? 0 : index;
-    //     $('.inner-box').animate({
-    //         top:-index * 500
-    //     })
-    // })
-    // 换一批
-    //左右滑动
     var index = 0;
     $('.change').click(function() {
         index++;
-        //边界判断
-        $('.inner-box').stop(true).animate({left: -index * 1200}, function(){
-            if(index === 3){
-                index = 0;
-                $('.inner-box').css('left',0);
-            }
+
+        index = index > 2 ? 0 : index;
+        $('.inner-box').animate({
+            top:-index * 500
         })
     })
+    // 换一批
+    //左右滑动
+    // var index = 0;
+    // $('.change').click(function() {
+    //     index++;
+    //     //边界判断
+    //     $('.inner-box').stop(true).animate({left: -index * 1200}, function(){
+    //         if(index > 2){
+    //             index = 0;
+    //             $('.inner-box').css('left',0);
+    //         }
+    //     })
+    // })
 })
