@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- iconfont.css引入 -->
+    <link rel="stylesheet" href="../../iconfont/iconfont.css">
+    <style>
+        .on {
+            font-size: 50px;
+            color: gold;
+        }
+        
+        .half {
+            font-size: 50px;
+            color: gold;
+        }
+        
+        .off {
+            font-size: 50px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+
+    </div>
+    <div class="box2">
+
+    </div>
+    <div class="box3">
+
+    </div>
+    <!-- jquery文件 -->
+    <script src="../../js/轮播插件/jquery-1.11.3.min.js"></script>
+    <script src="../../js/starRate.js"></script>
+    <script>
+        $(function() {
+            var star1 = createStarRate(3.6);
+            $('.box1').html(star1);
+
+            var star2 = createStarRate(3.2);
+            $('.box2').html(star2);
+
+            var star3 = createStarRate(4.3);
+            $('.box3').html(star3);
+        })
+    </script>
+</body>
+
+</html>
